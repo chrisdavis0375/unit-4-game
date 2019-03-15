@@ -34,7 +34,6 @@ p {
 
 #winsAndLoses {
     background: darkturquoise;
-    color: #ffffff;
     width: 75px;
     height: 100px;
     position: absolute;
@@ -43,10 +42,22 @@ p {
 }
 
 button {
-    margin: 5px;
+    margin: 10px 5px 5px 5px;
 }
 
 .crystals {
     width: 75px;
     height: 60px;
+}
+
+.score {
+    background: dodgerblue;
+    margin: 5px;
+    width: 200px;
+    color: #ffffff;
+}
+
+#totalScore {
+    height: 100px;
+    font-size: 20px;
 }

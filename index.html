@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="assets/javascript/game.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.js"></script>
     <title>Crystal Collector</title>
 </head>
 <body>
@@ -30,20 +29,28 @@
 
     <div>
     <div id="randomNumberBox">
-        <p>0<span id="randomNumber"></span></p>
+        <p><span id="randomNumber">0</span></p>
     </div>
 
     <div id="winsAndLoses">
-        <p>Wins: <span id="wins"></span></p>
-        <p>Loses: <span id="loses"></span></p>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
     </div>
     </div>
 
     <div>
-        <button><img class="crystals" src="assets/images/ruby.jpg"></button>
-        <button><img class="crystals" src="assets/images/sapphire.jpg"></button>
-        <button><img class="crystals" src="assets/images/emerald.jpg"></button>
-        <button><img class="crystals" src="assets/images/yellowcrystal.jpg"></button>
+        <button id = "ruby"><img class="crystals" src="assets/images/ruby.jpg"></button>
+        <button id = "sapphire"><img class="crystals" src="assets/images/sapphire.jpg"></button>
+        <button id = "emerald"><img class="crystals" src="assets/images/emerald.jpg"></button>
+        <button id = "yellowCrystal"><img class="crystals" src="assets/images/yellowcrystal.jpg"></button>
+    </div>
+    
+    <div class="score">
+        <p>Your total score is:</p>
+    </div>
+
+    <div  id="totalScore" class="score">
+        <p><span id="score">0</span></p>
     </div>
 
 </body>
